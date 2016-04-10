@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <RelativeLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/et_search">
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </ListView>
+
+        <TextView
+            android:id="@+id/tv_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="2dp"
+            android:background="#cccccc"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:text="A"/>
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="没有数据"/>
+
+    </RelativeLayout>
+
+    <com.example.yxj.demoindex.SectionBar
+        android:id="@+id/bar"
+        android:layout_width="33dp"
+        android:layout_height="match_parent"
+        android:paddingBottom="5dp"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/et_search"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/tv_letter"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/float_view_bg"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="#ffffff"
+        android:visibility="gone"
+        android:textSize="22sp"
+        />
+
+</RelativeLayout>
