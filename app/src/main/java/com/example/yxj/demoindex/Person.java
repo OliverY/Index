@@ -11,6 +11,8 @@ public class Person implements Comparable<Person>{
 
     public PinyinIndex pinyinIndex;
 
+    public int age;
+
     public Person() {
     }
 
